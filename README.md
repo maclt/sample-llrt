@@ -1,10 +1,18 @@
-# Welcome to your CDK TypeScript project
+# Sample LLRT 
+This is a repo to test how fast [LLRT](https://github.com/awslabs/llrt) is.  
+The result of this test is shared in [this post](https://maclt.substack.com/p/llrt).  
 
-This is a blank project for CDK development with TypeScript.
+## Prepare
+Please create `const.ts` file in the root directory and export 2 variables `prefix` and `region`.  
+```
+export const prefix = 'xxx';
+export const region = 'us-east-1';
+```
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+> [!NOTE]
+> `prefix` may prevents the unexpected conflict in AWS account.
 
-## Useful commands
+## CDK commands
 
 * `npm run build`   compile typescript to js
 * `npm run watch`   watch for changes and compile
@@ -12,3 +20,8 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 * `npx cdk deploy`  deploy this stack to your default AWS account/region
 * `npx cdk diff`    compare deployed stack with current state
 * `npx cdk synth`   emits the synthesized CloudFormation template
+
+## Invoke Lambdas
+To invoke lambda functions, I used 
+[AWS Lambda Power Tuning
+](https://github.com/alexcasalboni/aws-lambda-power-tuning). Please refer its document.
