@@ -1,0 +1,8 @@
+{
+  "lambdaARN": "function-arn",
+  "powerValues": [128],
+  "num": 10,
+  "payload": {},
+  "parallelInvocation": false,
+  "strategy": "balanced"
+}

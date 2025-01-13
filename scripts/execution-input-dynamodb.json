@@ -1,0 +1,13 @@
+{
+  "lambdaARN": "function-arn",
+  "powerValues": [128],
+  "num": 10,
+  "payload": {
+    "body": {
+      "id": "12345678",
+      "name": "maclt"
+    }
+  },
+  "parallelInvocation": false,
+  "strategy": "balanced"
+}

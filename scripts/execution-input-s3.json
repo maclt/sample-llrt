@@ -1,0 +1,13 @@
+{
+  "lambdaARN": "function-arn",
+  "powerValues": [128],
+  "num": 10,
+  "payload": {
+    "body": {
+      "fileName": "sample.txt",
+      "fileContent": "Hello, world!"
+    }
+  },
+  "parallelInvocation": false,
+  "strategy": "balanced"
+}
